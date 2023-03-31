@@ -1,0 +1,28 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include<iostream>
+#include<cstdlib>
+using namespace std;
+ 
+int main(){
+ 
+// creating variable
+float num1 = 55.55f;
+int x;
+x = num1;
+ 
+//Displaying variable values
+ 
+ cout << "Float variable value  = " << num1 << endl;
+ 
+ cout << "Int variable value  = " << x << endl;
+ 
+                return 1;
+ 
+}
