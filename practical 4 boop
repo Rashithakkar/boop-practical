@@ -1,0 +1,51 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+double findCube(double num)
+
+{
+
+    double ans;
+
+    double precision = 0.000001;
+
+    // calculate the integer part
+
+    for (double ans = 1; (ans * ans * ans) <= num; ++ans)
+
+        ;
+
+    ans--;
+
+    // Calculate the fractional part
+
+    for (ans; (ans * ans * ans) < num; ans += precision)
+
+        ;
+
+    return ans;
+
+} 
+
+int main()
+
+{
+
+    int num = 5;
+
+    cout << "The cube root of the number is: ";
+
+    cout << findCube(num) << "\n\n"; 
+
+    return 0;
+
+}
